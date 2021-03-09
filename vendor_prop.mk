@@ -25,6 +25,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.fluence.voicecall=true \
     persist.vendor.audio.fluence.voicerec=false \
     persist.vendor.audio.ras.enabled=false \
+    persist.vendor.bt.a2dp_offload_cap=sbc-aac \
+    persist.vendor.bt.aac_frm_ctl.enabled=true \
     ro.af.client_heap_size_kbyte=7168 \
     ro.audio.monitorRotation=true \
     ro.config.alarm_vol_default=10 \
@@ -110,10 +112,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     camera.disable_zsl_mode=1 \
     vidc.enc.dcvs.extra-buff-count=2
-
-# Charger
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.charger.enable_suspend=true
 
 # CNE
 PRODUCT_PROPERTY_OVERRIDES += \
