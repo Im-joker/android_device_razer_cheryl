@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_cheryl.mk
+    $(LOCAL_DIR)/mokee_cheryl.mk
