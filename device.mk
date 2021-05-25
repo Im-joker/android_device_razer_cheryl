@@ -460,5 +460,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
+# Dolby
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.feature.dolby_enable=true \
+    vendor.audio.dolby.ds2.enabled=true \
+    vendor.audio.dolby.ds2.hardbypass=false
+
 # Call the proprietary setup
 $(call inherit-product, vendor/razer/cheryl/cheryl-vendor.mk)
